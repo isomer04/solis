@@ -1,0 +1,60 @@
+/* App-specific global overrides — Tailwind/DaisyUI handles the rest */
+
+/* Coin list items in CryptoTracker */
+li.main-list {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid oklch(var(--b3));
+  font-size: 1.05rem;
+}
+
+/* Coin icon in list */
+.icons {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.whole-page {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.news-content img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.news-details {
+  flex: 1;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
