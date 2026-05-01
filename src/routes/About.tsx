@@ -49,7 +49,6 @@ const DATA_SOURCES = [
   "Alternative.me",
   "Supabase",
   "Cloudinary",
-  "EmailJS",
 ] as const;
 
 const TECH_STACK = [
