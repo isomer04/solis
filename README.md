@@ -28,7 +28,7 @@ solis is a production-grade, full-stack React application that combines real-tim
 | Feature                  | Details                                                               |
 | ------------------------ | --------------------------------------------------------------------- |
 | **Live Crypto Prices**   | Real-time price tracker for 100+ coins via CoinGecko API              |
-| **Coin Detail & Charts** | 30-day historical price chart using Recharts `ResponsiveContainer`    |
+| **Coin Detail & Charts** | Interactive multi-timeframe price chart using Lightweight Charts      |
 | **Crypto News Feed**     | Latest industry news aggregated from a public news API                |
 | **Community Blog**       | Full CRUD — create, read, update, and delete posts with image uploads |
 | **Comments**             | Flat commenting with per-post upvoting                                |
@@ -47,6 +47,9 @@ solis is a production-grade, full-stack React application that combines real-tim
 - **React Router 7** — `createBrowserRouter` with nested layouts and route-level lazy loading
 - **Tailwind CSS 4 + DaisyUI 5** — utility-first styling with an accessible component library
 - **Recharts 2** — composable charting with `ResponsiveContainer` for adaptive layouts
+- **Lightweight Charts** — high-performance financial charts for coin details
+- **Zod** — TypeScript-first schema validation with static type inference
+
 
 ### Backend & Services
 
