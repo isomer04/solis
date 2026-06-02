@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" data-theme="rh">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Solis — Real-time crypto market dashboard. Track prices, charts, news, and your portfolio in one place."
+        />
+
+        <!-- Open Graph / social sharing -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Solis — Crypto Market Dashboard" />
+        <meta
+            property="og:description"
+            content="Real-time crypto prices, charts, news, and portfolio tracking."
+        />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Solis — Crypto Market Dashboard" />
+        <meta
+            name="twitter:description"
+            content="Real-time crypto prices, charts, news, and portfolio tracking."
+        />
+
+        <!-- Theme colour for mobile browser chrome -->
+        <meta name="theme-color" content="#1e1e2e" />
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+        <title>Solis — Crypto Market Dashboard</title>
+
+        <!-- Apply stored theme before React mounts to avoid flash of unstyled content -->
+        <script>
+            try {
+                const raw = localStorage.getItem("solis_theme");
+                const t = raw === "rh" || raw === "rh-light" ? raw : "rh";
+                document.documentElement.setAttribute("data-theme", t);
+            } catch {
+                document.documentElement.setAttribute("data-theme", "rh");
+            }
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <noscript>
+            <p
+                style="
+                    font-family: sans-serif;
+                    text-align: center;
+                    margin-top: 4rem;
+                    color: #888;
+                "
+            >
+                Solis requires JavaScript to run. Please enable it in your
+                browser settings.
+            </p>
+        </noscript>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>
